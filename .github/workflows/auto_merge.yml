@@ -1,0 +1,20 @@
+name: Auto Merge
+
+on:
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Auto Merge
+    runs-on: ubuntu-latest
+    # `[automerge]` というprefixがある場合にだけこの workflow が発動する
+    if: ${{ startsWith(github.event.pull_request.title, '[automerge]') }}
+    steps:
+      - name: Auto Merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr merge ${{ steps.cpr.outputs.pull-request-url }} --merge

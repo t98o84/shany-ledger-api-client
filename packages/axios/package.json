@@ -1,0 +1,20 @@
+{
+  "name": "@takuya829/shany-ledger-api-client-axios",
+  "version": "0.0.1",
+  "description": "ShanyLedgerのAxiosで実装されたAPIクライアント",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/takuya829/shany-ledger-api-client-axios.git"
+  },
+  "author": "ShanyLedger",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
