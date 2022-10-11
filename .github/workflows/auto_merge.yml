@@ -14,6 +14,10 @@ jobs:
     # `[automerge]` というprefixがある場合にだけこの workflow が発動する
     if: ${{ startsWith(github.event.pull_request.title, '[automerge]') }}
     steps:
+      # API Clientリポジトリ(selfリポジトリ) をチェックアウト
+      - name: Checkout Current Repository
+        uses: actions/checkout@v3
+
       - name: Auto Merge
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
