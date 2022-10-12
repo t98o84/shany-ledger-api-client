@@ -14,6 +14,9 @@
     "dist"
   ],
   "include": [
-    "**/*.ts"
+    "src"
+  ],
+  "files": [
+    "dist"
   ]
 }
