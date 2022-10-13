@@ -38,6 +38,5 @@ jobs:
           npm install
           npx tsc
           npm publish ./
-          echo ::set-output name=version::$(npm version --json | jq '."@${{ github.repository_owner }}/shany-ledger-api-client-axios"')
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
