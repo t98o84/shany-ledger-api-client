@@ -4,6 +4,9 @@
   "description": "ShanyLedgerのAxiosで実装されたAPIクライアント",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "restricted",
     "registry": "https://npm.pkg.github.com/"

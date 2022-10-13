@@ -16,7 +16,4 @@
   "include": [
     "src"
   ],
-  "files": [
-    "dist"
-  ]
 }
