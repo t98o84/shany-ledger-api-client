@@ -13,6 +13,15 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+// May contain unused imports in some cases
+// @ts-ignore
+import { Maintenance } from './maintenance';
+
+/**
+ * @type ServiceUnavailableError
+ * メンテナンスもしくは過負荷等により一時的にサービスが利用できなくなった場合のエラー詳細です。
+ * @export
+ */
+export type ServiceUnavailableError = Maintenance | any;
+
+

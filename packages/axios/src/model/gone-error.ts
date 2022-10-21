@@ -13,6 +13,12 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+
+/**
+ * @type GoneError
+ * 永久的に利用できなくなっている対象リソースにアクセスしている場合のエラー詳細です。
+ * @export
+ */
+export type GoneError = GoneErrorAllOf & ProblemDetails;
+
+

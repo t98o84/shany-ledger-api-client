@@ -13,6 +13,12 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+
+/**
+ * @type ForbiddenError
+ * サーバーがリクエストを理解したものの、認証が拒否された場合のエラー詳細です。
+ * @export
+ */
+export type ForbiddenError = ForbiddenErrorAllOf & ProblemDetails;
+
+
