@@ -13,6 +13,12 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+
+/**
+ * @type InternalServerError
+ * サーバーで何らかの問題が発生した場合のエラー詳細です。
+ * @export
+ */
+export type InternalServerError = InternalServerErrorAllOf & ProblemDetails;
+
+

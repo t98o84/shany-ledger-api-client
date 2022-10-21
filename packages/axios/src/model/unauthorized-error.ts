@@ -13,6 +13,12 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+
+/**
+ * @type UnauthorizedError
+ * 有効な認証資格が不足していることによりリクエストが適用されない場合のエラー詳細です。
+ * @export
+ */
+export type UnauthorizedError = ProblemDetails & UnauthorizedErrorAllOf;
+
+

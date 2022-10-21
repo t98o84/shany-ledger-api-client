@@ -13,6 +13,15 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+// May contain unused imports in some cases
+// @ts-ignore
+import { ValidationErrorAllOfErrors } from './validation-error-all-of-errors';
+
+/**
+ * @type ValidationError
+ * バリデーションに失敗した場合のエラー詳細です。
+ * @export
+ */
+export type ValidationError = DefaultBadRequestError & ValidationErrorAllOf;
+
+

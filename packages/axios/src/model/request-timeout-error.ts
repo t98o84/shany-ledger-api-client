@@ -13,6 +13,12 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+
+/**
+ * @type RequestTimeoutError
+ * サーバーがこの未使用のコネクションをシャットダウンした場合のエラー詳細です。
+ * @export
+ */
+export type RequestTimeoutError = ProblemDetails & RequestTimeoutErrorAllOf;
+
+

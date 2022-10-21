@@ -13,6 +13,12 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+
+/**
+ * @type BadGatewayError
+ * ゲートウェイまたはプロキシとして機能しているサーバーが上流のサーバーから無効なレスポンスを受け取った場合のエラー詳細です。
+ * @export
+ */
+export type BadGatewayError = BadGatewayErrorAllOf & ProblemDetails;
+
+
