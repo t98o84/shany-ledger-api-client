@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "umd",
     "declaration": true,
@@ -8,6 +8,7 @@
     "outDir": "./dist/",
     "strict": true,
     "moduleResolution": "node",
+    "isolatedModules": true,
   },
   "exclude": [
     "node_modules",
