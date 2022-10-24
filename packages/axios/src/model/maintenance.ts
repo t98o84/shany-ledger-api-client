@@ -13,6 +13,12 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+
+/**
+ * @type Maintenance
+ * メンテナンスのため一時的にサービスが利用できなくなった場合のエラー詳細です。
+ * @export
+ */
+export type Maintenance = MaintenanceAllOf & ProblemDetails;
+
+

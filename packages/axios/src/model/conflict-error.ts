@@ -13,6 +13,12 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+
+/**
+ * @type ConflictError
+ * 競合が発生した場合のエラー詳細です。
+ * @export
+ */
+export type ConflictError = ConflictErrorAllOf & ProblemDetails;
+
+

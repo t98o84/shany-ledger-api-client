@@ -13,6 +13,12 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+
+/**
+ * @type NotFoundError
+ * サーバーがリクエストされたリソースを見つけることができない場合のエラー詳細です。
+ * @export
+ */
+export type NotFoundError = NotFoundErrorAllOf & ProblemDetails;
+
+

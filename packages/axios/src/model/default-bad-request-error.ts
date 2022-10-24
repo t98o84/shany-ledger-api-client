@@ -13,6 +13,12 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./model";
+
+/**
+ * @type DefaultBadRequestError
+ * リクエスト内容に誤りがあった場合のエラー詳細です。
+ * @export
+ */
+export type DefaultBadRequestError = DefaultBadRequestErrorAllOf & ProblemDetails;
+
+
