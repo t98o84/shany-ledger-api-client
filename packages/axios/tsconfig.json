@@ -2,13 +2,16 @@
   "compilerOptions": {
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "umd",
+    "module": "commonjs",
     "declaration": true,
     "sourceMap": false,
     "outDir": "./dist/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "moduleResolution": "node",
     "isolatedModules": true,
+    "skipLibCheck": true
   },
   "exclude": [
     "node_modules",
