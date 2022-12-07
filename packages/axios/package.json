@@ -1,6 +1,6 @@
 {
   "name": "@takuya829/shany-ledger-api-client-axios",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "ShanyLedgerのAxiosで実装されたAPIクライアント",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
