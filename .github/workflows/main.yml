@@ -23,6 +23,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh pr merge ${{ github.event.pull_request.html_url }} --merge
 
+      # マージデータ反映のため再度 API Clientリポジトリ(selfリポジトリ) をチェックアウト
+      - name: Checkout Current Repository
+        uses: actions/checkout@v3
+
       # nodeセットアップ
       - name: setup node
         uses: actions/setup-node@v3
