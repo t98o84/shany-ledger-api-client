@@ -22,7 +22,7 @@ jobs:
           registry-url: https://npm.pkg.github.com
 
       # npm install と TypeScriptトランスパイルをした後、パッケージとして公開
-      - name: build & publish package
+      - name: build & publish package for axios
         id: publish_package_axios
         run: |
           cd packages/axios
