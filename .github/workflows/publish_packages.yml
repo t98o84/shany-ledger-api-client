@@ -1,6 +1,9 @@
 name: Publish packages
 
 on:
+  push:
+    branches:
+      - main
   pull_request_target:
     types:
       - closed
@@ -11,7 +14,6 @@ jobs:
   publish:
     name: Build and Publish package
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true
     steps:
       # API Clientリポジトリ(selfリポジトリ) をチェックアウト
       - name: Checkout Current Repository
