@@ -9,8 +9,6 @@ jobs:
   release:
     name: Build and Publish package
     runs-on: ubuntu-latest
-    # `[automerge]` というprefixがある場合にだけこの workflow が発動する
-    if: ${{ startsWith(github.event.pull_request.title, '[automerge]') }}
     steps:
       # API Clientリポジトリ(selfリポジトリ) をチェックアウト
       - name: Checkout Current Repository
