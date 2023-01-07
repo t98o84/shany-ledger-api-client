@@ -1,14 +1,12 @@
 name: Publish packages
 
 on:
-  pull_request_target:
-    types:
-      - closed
+  push:
     branches:
       - main
 
 jobs:
-  release:
+  publish:
     name: Build and Publish package
     runs-on: ubuntu-latest
     steps:

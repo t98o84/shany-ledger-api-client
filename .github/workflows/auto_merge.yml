@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
-  release:
+  merge:
     name: Auto Merge
     runs-on: ubuntu-latest
     # `[automerge]` というprefixがある場合にだけこの workflow が発動する
