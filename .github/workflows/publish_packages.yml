@@ -1,10 +1,11 @@
 name: Publish packages
 
 on:
-  pull_request:
+  pull_request_target:
+    types:
+      - closed
     branches:
       - main
-    types: [closed]
 
 jobs:
   release:
